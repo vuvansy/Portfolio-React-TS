@@ -1,7 +1,7 @@
-import { SKILLS_DATA } from "../../../helpers/data";
-import { skillsImage } from "../../../helpers/skill.image";
+import { SKILLS_DATA } from "helpers/data";
+import { skillsImage } from "helpers/skill.image";
 import Marquee from "react-fast-marquee";
-import './skill.scss';
+import "./skill.scss";
 import { Col, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
@@ -35,13 +35,12 @@ const Skill = () => {
                                 />
                                 <p className="skill-name">{skill}</p>
                             </div>
-
                         </div>
                     ))}
                 </Marquee>
             </Col>
         </Row>
-    )
-}
+    );
+};
 
 export default Skill;
